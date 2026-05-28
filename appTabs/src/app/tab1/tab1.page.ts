@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IFilme } from '../model/IFilme';
-import { Router } from '@angular/router';
+import {NavigationExtras, Router } from '@angular/router';
+/* eslint-disable @typescript-eslint/member-ordering */
 
 @Component({
   selector: 'app-tab1',
