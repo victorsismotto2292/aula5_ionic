@@ -10,7 +10,7 @@
   <ion-list *ngIf="listaFilmes">
 
     <ion-item-sliding *ngFor="let filme of listaFilmes">
-      <ion-item lines="full">
+      <ion-item lines="full" (click)="exibirFilme(filme)">
 
         <ion-thumbnail slot="start">
           <img *ngIf="filme.cartaz" src="{{filme.cartaz}}" />
