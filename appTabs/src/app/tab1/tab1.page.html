@@ -20,15 +20,15 @@
         <ion-label class="ion-text-wrap">
           <div>
             <h1>{{filme.nome}}</h1>
-            <p>{{file.lancamento}}</p>
+            <p>{{filme.lancamento}}</p>
             <ion-badge color="medium" *ngFor="let genero of filme.generos">
               {{genero}}
             </ion-badge>
           </div>
         </ion-label>
 
-        <ion-chip [color]="filme.classficacao < 5 ? 'danger' : ((filme.classficacao < 7 ? 'warning' : 'success'))" outline>
-          <ion-label>{{filme.classficacao}}</ion-label>
+        <ion-chip [color]="filme.classificacao < 5 ? 'danger' : ((filme.classificacao < 7 ? 'warning' : 'success'))" outline>
+          <ion-label>{{filme.classificacao}}</ion-label>
         </ion-chip>
       </ion-item>
 

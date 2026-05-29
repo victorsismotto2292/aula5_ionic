@@ -8,6 +8,8 @@ import { FilmeDetalhePageRoutingModule } from './filme-detalhe-routing.module';
 
 import { FilmeDetalhePage } from './filme-detalhe.page';
 
+import { Component } from '@angular/core';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -17,4 +19,12 @@ import { FilmeDetalhePage } from './filme-detalhe.page';
   ],
   declarations: [FilmeDetalhePage]
 })
+
+@Component({
+  selector: 'app-tab1',
+  templateUrl: 'tab1.page.html',
+  styleUrls: ['tab1.page.scss'],
+  standalone: false,
+})
+
 export class FilmeDetalhePageModule {}
