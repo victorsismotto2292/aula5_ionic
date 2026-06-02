@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ISerie } from '../model/ISerie';
 import { AlertController, ToastController } from '@ionic/angular';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -11,6 +12,7 @@ import { AlertController, ToastController } from '@ionic/angular';
 export class Tab2Page {
 
   constructor(
+    public router: Router,
     public alertController: AlertController,
     public toastController: ToastController
   ) {}
@@ -62,6 +64,11 @@ export class Tab2Page {
       favorito: false
     }
   ];
+
+    exibirSerie(serie: ISerie) {
+    const navigationExtras: NavigationExtras = { state: { paramSerie: serie} };
+    this.router.navigate(['serie-detalhe'], navigationExtras);
+  }
 
   async exibirAlertaFavorito(serie: ISerie) {
     const alert = await this.alertController.create({

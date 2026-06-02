@@ -4,5 +4,6 @@ export interface IAtor {
   nacionalidade: string;
   foto: string;
   filmes: string[];
+  pagina?: string[];
   favorito: boolean;
 }
