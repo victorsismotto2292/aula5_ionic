@@ -12,6 +12,10 @@ const routes: Routes = [
   },  {
     path: 'serie-detalhe',
     loadChildren: () => import('./serie-detalhe/serie-detalhe.module').then( m => m.SerieDetalhePageModule)
+  },
+  {
+    path: 'ator-detalhe',
+    loadChildren: () => import('./ator-detalhe/ator-detalhe.module').then( m => m.AtorDetalhePageModule)
   }
 
 ];

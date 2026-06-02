@@ -8,7 +8,7 @@
   <ion-list *ngIf="listaAtores">
 
     <ion-item-sliding *ngFor="let ator of listaAtores">
-      <ion-item lines="full">
+      <ion-item lines="full" (click)="exibirAtor(ator)">
 
         <ion-avatar slot="start">
           <img *ngIf="ator.foto" src="{{ator.foto}}" />

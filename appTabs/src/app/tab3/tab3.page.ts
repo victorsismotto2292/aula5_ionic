@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IAtor } from '../model/IAtor';
 import { AlertController, ToastController } from '@ionic/angular';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab3',
@@ -11,6 +12,7 @@ import { AlertController, ToastController } from '@ionic/angular';
 export class Tab3Page {
 
   constructor(
+    public router: Router,
     public alertController: AlertController,
     public toastController: ToastController
   ) {}
@@ -57,6 +59,11 @@ export class Tab3Page {
       favorito: false
     }
   ];
+
+    exibirAtor(ator: IAtor) {
+    const navigationExtras: NavigationExtras = { state: { paramAtor: ator } };
+    this.router.navigate(['ator-detalhe'], navigationExtras);
+  }
 
   async exibirAlertaFavorito(ator: IAtor) {
     const alert = await this.alertController.create({
