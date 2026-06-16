@@ -30,7 +30,7 @@ export class Tab3Page {
       nome: 'Meryl Streep',
       nascimento: '1949-06-22',
       nacionalidade: 'Americana',
-      foto: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/feTsLFG3OpKLuCv3dUkBYiYBfhG.jpg',
+      foto: 'https://media.themoviedb.org/t/p/w90_and_h90_face/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg',
       filmes: ['O Diabo Veste Prada', 'Kramer vs. Kramer', 'A Dama de Ferro'],
       favorito: false
     },
@@ -46,7 +46,7 @@ export class Tab3Page {
       nome: 'Cate Blanchett',
       nascimento: '1969-05-14',
       nacionalidade: 'Australiana',
-      foto: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/javAKAUOaBwgapnLFdBoMVSi3KB.jpg',
+      foto: 'https://media.themoviedb.org/t/p/w90_and_h90_face/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg',
       filmes: ['O Senhor dos Anéis', 'Carol', 'Tár'],
       favorito: false
     },
