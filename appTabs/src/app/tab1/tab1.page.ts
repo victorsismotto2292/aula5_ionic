@@ -44,7 +44,7 @@ export class Tab1Page {
       lancamento: '1972-03-24',
       duracao: '2h 55m',
       classificacao: 9.2,
-      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsLegHnDmni.jpg',
+      cartaz: 'https://media.themoviedb.org/t/p/w94_and_h141_face/oJagOzBu9Rdd9BrciseCm3U3MCU.jpg',
       generos: ['Crime', 'Drama'],
       pagina: '/godfather',
       favorito: false
